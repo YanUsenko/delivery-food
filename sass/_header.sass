@@ -1,0 +1,29 @@
+header 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 44px
+.header-buttons
+        display: flex
+        align-items: center
+.input-adress
+    flex: 0.8
+    height: 36px
+    background-image: url(../img/home.svg)
+.button-text
+    font-size: 16px
+    line-height: 24px
+    margin-left: 4px
+
+@media (max-width: 578px)
+    header 
+        flex-wrap: wrap
+        .input-adress
+            order: 5
+            margin-top: 15px
+            flex: 1
+
+@media (max-width: 480px)
+    .logo
+        width: 20%
+    

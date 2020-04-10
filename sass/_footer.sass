@@ -1,0 +1,58 @@
+.footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 60px 0px
+    &-nav
+        margin-right: auto
+        margin-left: 35px
+
+        &_link
+            text-decoration: none
+            font-family: Roboto
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 21px
+            color: #595959
+            &:not(:last-child)
+                margin-right: 15px
+    &-social
+        display: flex
+        align-items: center
+        &_link
+            text-decoration: none
+            &:not(:last-child)
+                margin-right: 20px
+
+@media (max-width: 992px)
+    .footer
+        padding: 45px 0px
+        &-nav
+            &_link
+                font-size: 16px
+
+@media (max-width: 768px)
+    .footer
+        &-nav
+            &_link
+                font-size: 14px
+        &-social
+            &_link
+                &-img
+                    height: 20px
+@media (max-width: 480px)
+    .footer
+        flex-wrap: wrap
+        &-nav
+            flex: 0.4
+            &:not(:last-child)
+                margin-right: auto
+        &-social
+            flex: 0.2
+            flex-wrap: wrap
+            &_link
+                margin-bottom: 10px
+                &-img
+                    width: 25px
+
