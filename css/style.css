@@ -132,6 +132,9 @@ header {
   .logo {
     width: 20%;
   }
+  .m-none {
+    display: none;
+  }
 }
 
 .promo {
@@ -379,7 +382,7 @@ header {
 
 @media (max-width: 578px) {
   .restaurants-heading_title {
-    font-size: 20px;
+    font-size: 25px;
   }
   .card {
     -ms-flex-preferred-size: 99%;
@@ -609,6 +612,19 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 25px;
+}
+
+@media (max-width: 480px) {
+  .m-change {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .restaurant-info_price:after {
+    display: none;
+  }
+  .restaurant-info_type {
+    margin-left: 0;
+  }
 }
 
 .modal {

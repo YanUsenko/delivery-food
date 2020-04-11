@@ -84,3 +84,13 @@
     display: flex
     align-items: center
     margin-top: 25px
+
+@media (max-width: 480px)
+    .m-change
+        flex-wrap: wrap
+    .restaurant-info
+        &_price
+            &:after
+                display: none
+        &_type
+            margin-left: 0
